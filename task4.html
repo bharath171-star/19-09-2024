@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,tr,td,th{
+            border: 2px solid;
+            border-collapse: collapse;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        let table=document.createElement("table");
+        let tr1=document.createElement("tr");
+        let tr2=document.createElement("tr");
+        let tr3=document.createElement("tr");
+        let head1=document.createElement("th");
+        let head2=document.createElement("th");
+        let td1=document.createElement("td");
+        let td2=document.createElement("td");
+        let td3=document.createElement("td");
+        let td4=document.createElement("td");
+        head1.innerHTML="names";
+        head2.innerHTML="gender";
+        td1.innerHTML="bharath";
+        td2.innerHTML="Male";
+        td3.innerHTML="Meena";
+        td4.innerHTML="Female";
+        tr1.appendChild(head1);
+        tr1.appendChild(head2);
+        tr2.appendChild(td1);
+        tr2.appendChild(td2);
+        tr3.appendChild(td3);
+        tr3.appendChild(td4);
+        table.appendChild(tr1);
+        table.appendChild(tr2);
+        table.appendChild(tr3);
+        document.body.appendChild(table);
+
+       
+    </script>
+</body>
+</html>

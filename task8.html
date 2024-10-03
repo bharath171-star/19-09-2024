@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let descriptionlist=document.createElement("dl");
+        let ditem1=document.createElement("dt");
+        let ditem2=document.createElement("dt");
+        let ditem3=document.createElement("dt");
+        let dd1=document.createElement("dd");
+        let dd2=document.createElement("dd");
+        let dd3=document.createElement("dd");
+        ditem1.innerHTML="<b>HTML:</b>";
+        ditem2.innerHTML="<b>CSS:</b>";
+        ditem3.innerHTML="<b>JAVA SCRIPT:</b>";
+        dd1.innerHTML="to create web pages";
+        dd2.innerHTML="to style the webpage";
+        dd3.innerHTML="to add interactive to web pages";
+        ditem1.appendChild(dd1);
+        ditem2.appendChild(dd2);
+        ditem3.appendChild(dd3);
+        descriptionlist.appendChild(ditem1);
+        descriptionlist.appendChild(ditem2);
+        descriptionlist.appendChild(ditem3);
+        document.body.appendChild(descriptionlist);
+
+    </script>
+</body>
+</html>

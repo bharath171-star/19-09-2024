@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        let orderlist = document.createElement("ol");
+        
+        
+        let item1 = document.createElement("li");
+        let item2 = document.createElement("li");
+        let subitem = document.createElement("ol");
+        let subitem1 = document.createElement("li");
+        let subitem2 = document.createElement("li");
+        item1.innerHTML = "Coffee";
+        item2.innerHTML = "Tea";
+        subitem1.innerHTML = "Ginger Tea";
+        subitem2.innerHTML = "Masala Tea";
+        subitem.appendChild(subitem1);
+        subitem.appendChild(subitem2);
+        item2.appendChild(subitem);
+        orderlist.appendChild(item1);
+        orderlist.appendChild(item2);
+        document.body.appendChild(orderlist);
+    </script>
+</body>
+</html>
